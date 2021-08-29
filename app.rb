@@ -3,9 +3,9 @@ require 'socket'
 
 class ChatServer
   def initialize
-    @host = '0.0.0.0'
-    @port = 8080
-        
+    @host = ENV["HOST"]
+    @port = ENV["PORT"]
+
     @messages = []
     @userList = {}
 

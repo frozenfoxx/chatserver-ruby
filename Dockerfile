@@ -5,7 +5,9 @@ FROM ruby:3-alpine3.13
 LABEL maintainer="FrozenFOXX <frozenfoxx@churchoffoxx.net>"
 
 # Environment variables
-ENV BUILD_DEPENDENCIES="build-base ruby-dev"
+ENV BUILD_DEPENDENCIES="build-base ruby-dev" \
+  HOST="0.0.0.0" \
+  PORt="8080"
 
 WORKDIR /usr/src/app
 
